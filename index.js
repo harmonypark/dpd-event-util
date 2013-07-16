@@ -1,14 +1,16 @@
 var Resource = require('deployd/lib/resource')
   , Script = require('deployd/lib/script')
   , util = require('util')
-  , s = require('string');
+  , s = require('string')
+  , validator = require('validator')
+  , sanitize = validator.sanitize;
 
 function EventResource() {
   Resource.apply(this, arguments);
 }
 util.inherits(EventResource, Resource);
 
-EventResource.label = "Event";
+EventResource.label = "Event-Util";
 EventResource.events = ["get", "post"];
 
 module.exports = EventResource;
@@ -30,7 +32,8 @@ EventResource.prototype.handle = function (ctx, next) {
       result = val;
     }
     , util : {
-      string: s
+      string: s,
+      sanitize: sanitize
     }
   };
 
