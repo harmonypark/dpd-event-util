@@ -1,0 +1,15 @@
+{
+  "name": "dpd-event-utils",
+  "version": "0.0.1",
+  "description": "ERROR: No README.md file found!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  // "repository": {
+  //   "type": "git",
+  //   "url": "git://github.com/deployd/dpd-event.git"
+  // },
+  "author": "",
+  "readme": "ERROR: No README data found!"
+}
