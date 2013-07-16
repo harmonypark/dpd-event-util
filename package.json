@@ -6,10 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  // "repository": {
-  //   "type": "git",
-  //   "url": "git://github.com/deployd/dpd-event.git"
-  // },
   "author": "",
-  "readme": "ERROR: No README data found!"
+  "readme": "ERROR: No README data found!",
+  "dependencies": {
+    "string": "~1.5.0"
+  }
 }
